@@ -2,9 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-export LC_ALL=en_GB.UTF-8
-export LANG=en_GB.UTF-8
-export LANGUAGE=en_GB.UTF-8
+#export LC_ALL=en_GB.UTF-8
+#export LANG=en_GB.UTF-8
+#export LANGUAGE=en_GB.UTF-8
 
 # If not running interactively, don't do anything
 case $- in
