@@ -1,0 +1,7 @@
+[user]
+	email = lolmcbride@pm.me
+	name = Lol McBride
+[core]
+	editor = nvim
+[commit]
+	template = /home/mcbridl/.gitmessage.txt

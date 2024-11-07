@@ -2,9 +2,9 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
-#export LC_ALL=en_GB.UTF-8
-#export LANG=en_GB.UTF-8
-#export LANGUAGE=en_GB.UTF-8
+export LC_ALL=en_GB.UTF-8
+export LANG=en_GB.UTF-8
+export LANGUAGE=en_GB.UTF-8
 
 # If not running interactively, don't do anything
 case $- in
@@ -43,7 +43,6 @@ shopt -s checkwinsize
 if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
 	debian_chroot=$(cat /etc/debian_chroot)
 fi
-
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color | *-256color) color_prompt=yes ;;
