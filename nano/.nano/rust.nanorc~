@@ -1,0 +1,43 @@
+
+# Nano configuration for Rust
+# Copyright 2015 The Rust Project Developers.
+#
+# NOTE: Rules are applied in order: later rules re-colorize matching text.
+
+
+syntax "Rust" "\.rs"
+comment "//"
+
+# function definition
+color yellow "fn [a-z0-9_]+"
+
+# Reserved words
+color brightgreen "\<(abstract|alignof|as|become|box|break|const|continue|crate|do|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|offsetof|override|priv|pub|pure|ref|return|sizeof|static|self|struct|super|true|trait|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\>"
+
+# macros
+color red "[a-z_]+!"
+
+# Constants
+color magenta "[A-Z][A-Z_]+"
+
+# Traits/Enums/Structs/Types/etc.
+color magenta "[A-Z][a-z]+"
+
+# Strings
+color orange "\".*\""
+color orange start="\".*\\$" end=".*\""
+# NOTE: This isn't accurate but matching "#{0,} for the end of the string is too liberal
+color orange start="r#+\"" end="\"#+"
+
+# Comments
+color brightcyan "^\s*//.*"
+color brightcyan start="^\s*/\*" end="\*/"
+
+# Attributes
+color magenta start="#!\[" end="\]"
+
+# Some common markers
+color cyan "(XXX|TODO|FIXME|\?\?\?)"
+
+## Trailing spaces
+color ,green "[[:space:]]+$"
