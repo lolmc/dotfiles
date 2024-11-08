@@ -1,0 +1,2 @@
+export PATH=$PATH:/var/lib/flatpak/exports/bin /var/lib/flatpak/exports/bin
+export PATH=$PATH:/snap/bin
