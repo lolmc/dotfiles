@@ -20,7 +20,7 @@ use_8th_bit_as_meta=false
 mouse_move_pages_viewer=true
 mouse_close_dialog=false
 fast_refresh=false
-drop_menus=false
+drop_menus=true
 wrap_mode=true
 old_esc_mode=true
 cd_symlinks=true
@@ -87,15 +87,15 @@ skin=gray-green-purple256
 
 [Layout]
 output_lines=0
-left_panel_size=106
-top_panel_size=0
+left_panel_size=52
+top_panel_size=21
 message_visible=true
 keybar_visible=true
 xterm_title=true
 command_prompt=true
 menubar_visible=true
 free_space=true
-horizontal_split=false
+horizontal_split=true
 vertical_equal=true
 horizontal_equal=true
 
